@@ -217,13 +217,13 @@ pub fn generate_tiling(tileset: &TileSet, w: usize, h: usize, seed: u32) -> Vec<
                     }
                 }
             };
-            if gen < 10 {
+            if gen < 100 {
                 small_rollbacks += 1;
                 roll_back(i,j,1);
-            } else if gen < 100 {
+            } else if gen < 1000 {
                 med_rollbacks += 1;
                 roll_back(i,j,2);
-            } else if gen < 1000 {
+            } else if gen < 0 {
                 big_rollbacks += 1;
                 roll_back(i,j,3);
             } else {
@@ -331,16 +331,23 @@ fn rot_tile(pixel_data: [(u8, u8, u8); 9]) -> [(u8, u8, u8); 9] {
 }
 
 fn main() {
+    
     do_tiles("test_tilesets/horz.png", "test_results/horz.png", 60, 60, 69);
     do_tiles("test_tilesets/vert.png", "test_results/vert.png", 60, 60, 69);
     do_tiles("test_tilesets/dontplace.png", "test_results/dontplace.png", 60, 60, 69);
     do_tiles("test_tilesets/dontplaceh.png", "test_results/dontplaceh.png", 60, 60, 69);
+    do_tiles("test_tilesets/dontplace2.png", "test_results/dontplace2.png", 60, 60, 72);
+    do_tiles("test_tilesets/rps.png", "test_results/rps.png", 60, 60, 72);
     do_tiles("test_tilesets/flower.png", "test_results/flower.png", 60, 60, 69);
     do_tiles("test_tilesets/flower2.png", "test_results/flower2.png", 60, 60, 69);
     do_tiles("test_tilesets/roads.png", "test_results/roads.png", 60, 60, 69);
     do_tiles("test_tilesets/pluroads.png", "test_results/pluroads.png", 60, 60, 69);
     do_tiles("test_tilesets/testbeach.png", "test_results/testbeach.png", 60, 60, 69);
     do_tiles("test_tilesets/testbeachgrass.png", "test_results/testbeachgrass.png", 60, 60, 69);
+    do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest.png", 60, 60, 69);
+    do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest2.png", 60, 60, 70);
+    do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest3.png", 60, 60, 71);
+    do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest4.png", 60, 60, 72);
     do_tiles("test_tilesets/testoilwater.png", "test_results/testoilwater.png", 60, 60, 69);
     do_tiles("test_tilesets/testvillage.png", "test_results/testvillage.png", 60, 60, 69);
     do_tiles("test_tilesets/testvillage.png", "test_results/testvillage2.png", 60, 60, 70);
