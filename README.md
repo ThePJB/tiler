@@ -61,3 +61,7 @@ The quality of the result is completely dependent on the solver. The current sol
 
 nothing seems to work better with big rollbacks
 pluroads once worked really well?
+
+
+
+rapid iteration would be good

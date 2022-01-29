@@ -348,6 +348,10 @@ fn main() {
     do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest2.png", 60, 60, 70);
     do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest3.png", 60, 60, 71);
     do_tiles("test_tilesets/testbeachgrassforest.png", "test_results/testbeachgrassforest4.png", 60, 60, 72);
+    do_tiles("test_tilesets/bgfhut.png", "test_results/bgfhut1.png", 60, 60, 69);
+    do_tiles("test_tilesets/bgfhut.png", "test_results/bgfhut2.png", 60, 60, 70);
+    do_tiles("test_tilesets/bgfhut.png", "test_results/bgfhut3.png", 60, 60, 71);
+    do_tiles("test_tilesets/bgfhut.png", "test_results/bgfhut4.png", 60, 60, 72);
     do_tiles("test_tilesets/testoilwater.png", "test_results/testoilwater.png", 60, 60, 69);
     do_tiles("test_tilesets/testvillage.png", "test_results/testvillage.png", 60, 60, 69);
     do_tiles("test_tilesets/testvillage.png", "test_results/testvillage2.png", 60, 60, 70);
